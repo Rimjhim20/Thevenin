@@ -1,6 +1,6 @@
 import pic from './img/THEVENIN.JPG'
 import pic1 from './img/thevnine.jpg'
-import "./App.css";
+
 import { nextt, nextt2, nextt3, nextt4, perform1, perform2, perform3, perform4, printpage } from './perform';
 
 function App() {
@@ -46,14 +46,14 @@ function App() {
                 </option>
               </select>
             </div>
-            <div id="thckt" className="c19">
-              <img src={pic1} className="c2" alt=""/> 
-              <input type="number" name="vth2" defaultValue={0} id="vth2" className="c14" readOnly="readonly" />
-               <input type="number" name="rth2" defaultValue={0} id="rth2" className="c15" readOnly="readonly" /> 
-               <input type="number" name="rl2" defaultValue={0} id="rl2" className="c16" readOnly="readonly" />
+            <div id="thckt" className="relative bg-blue float-left hidden w-6/12">
+              <img src={pic1} className="absolute border-2 border-white w-6/12" alt=""/> 
+              <input type="number" name="vth2" defaultValue={0} id="vth2" className="text-center absolute bg-gradient-to-r from-blue w-36 right-96 top-36" readOnly="readonly" />
+               <input type="number" name="rth2" defaultValue={0} id="rth2" className="text-center absolute bg-gradient-to-r from-blue w-36 right-72 top-36" readOnly="readonly" /> 
+               <input type="number" name="rl2" defaultValue={0} id="rl2" className="text-center absolute bg-gradient-to-r from-blue w-32 right-36 top-36" readOnly="readonly" />
               <div className="c17">
                 Load Current(I<sub>RL</sub>) &nbsp;:
-              </div><input type="number" name="A13" defaultValue={0} id="A13" className="c18" readOnly="readonly" />
+              </div><input type="number" name="A13" defaultValue={0} id="A13" className=" absolute bg-gradient-to-r from-blue top-80 text-center right-72 w-32" readOnly="readonly" />
             </div>
             <div className="float-right p-4 w-96 h-92 border-4 border-black rounded-xl">
               <div className="font-bold text-3xl text-center">
@@ -119,21 +119,21 @@ function App() {
 
             </div>
           </div>
-          <div className="c29" />
+          <div className="clear-both text-center " />
           <div id="observation" className="text-center w-11/12 mt-28">
             <h3 className="font-bold text-4xl  text-black mb-4">Observation Table</h3>
             <table cellSpacing={0} className="text-sm border-4 border-black center">
              
               <tbody><tr>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">SL No.</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Actual Load Current(I<sub>RL</sub>)</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Load Voltage(V<sub>L</sub>)</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Load Resistance (R<sub>L</sub>)=V<sub>RL</sub>/I<sub>RL</sub></th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Thevenin Voltage(V<sub>Th</sub>)</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Supply Voltage(V<sub>2</sub>)</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Ammeter Reading(I)</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Thevenin Resistance R<sub>Th</sub>=V<sub>2</sub>/I</th>
-                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-4">Load current (I<sub>RL</sub>)=V<sub>Th</sub>/(R<sub>Th</sub>+R<sub>L</sub>)</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">SL No.</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Actual Load Current(I<sub>RL</sub>)</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Load Voltage(V<sub>L</sub>)</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Load Resistance (R<sub>L</sub>)=V<sub>RL</sub>/I<sub>RL</sub></th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Thevenin Voltage(V<sub>Th</sub>)</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Supply Voltage(V<sub>2</sub>)</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Ammeter Reading(I)</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Thevenin Resistance R<sub>Th</sub>=V<sub>2</sub>/I</th>
+                  <th class="bg-blue border-b-2 border-r-2 text-xl  border-black p-2">Load current (I<sub>RL</sub>)=V<sub>Th</sub>/(R<sub>Th</sub>+R<sub>L</sub>)</th>
                 </tr>
                 {/* Table Header */}
                 <tr>
@@ -160,7 +160,7 @@ function App() {
                   <td class="border-2  border-blue p-4"><input type="number" name="tr80" defaultValue id="tr80" className="c31" readOnly="readonly" /></td>
                 </tr>
                 <tr>
-                  <td><strong>3</strong></td>
+                  <td class="border-2  border-blue p-4">3 </td>
                   <td class="border-2  border-blue p-4"><input type="number" name="tr11" defaultValue id="tr11" className="c31" readOnly="readonly" /></td>
                   <td class="border-2  border-blue p-4"><input type="number" name="tr21" defaultValue id="tr21" className="c31" readOnly="readonly" /></td>
                   <td class="border-2  border-blue p-4"><input type="number" name="tr31" defaultValue id="tr31" className="c31" readOnly="readonly" /></td>
