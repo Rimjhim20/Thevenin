@@ -68,9 +68,9 @@ function App() {
                   <li> Then click on Run.</li>
                   </ul>
                 <p className="text-center">
-                  <input type="button" className=" mb-8 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-xl text-pink-800 cursor-pointer " defaultValue="Run" onClick={perform1} /></p>
+                  <input type="button" className=" mb-8 inline block transform motion-safe:hover:scale-110 text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-xl text-pink-800 cursor-pointer " defaultValue="Run" onClick={perform1} /></p>
                 <p >Load current (I<sub>RL</sub>): &nbsp; &nbsp; <input type="number" name="A1" defaultValue={0} id="A1" className="text-black border-2 border-black w-18 text-center bg-gradient-to-r from-blue " readOnly="readonly" /></p>
-                <p class="ml-72"><input type="button" className="border-2 border-black mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Next" id="next1" onClick={nextt} disabled="true" /></p>
+                <p class="ml-72"><input type="button" className="border-2 transform motion-safe:hover:scale-110 border-black mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Next" id="next1" onClick={nextt} disabled="true" /></p>
               
               </div>
 
@@ -82,9 +82,9 @@ function App() {
                   <li>Select S1 to Position-1 (Supply) &amp; S2 to Position (Open)</li>
                   <li> Then click on Run.</li>
                   </ul> 
-                <p className="text-center"><input type="button" className="mb-8 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-2xl text-pink-800 " defaultValue="Run" onClick={perform2} /></p>
+                <p className="text-center"><input type="button" className="mb-8 transform motion-safe:hover:scale-110 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-2xl text-pink-800 " defaultValue="Run" onClick={perform2} /></p>
                 <p >Thevenin Voltage(V<sub>Th</sub>):&nbsp; &nbsp; <input type="number" name="vth1" defaultValue={0} id="vth1" className="text-black border-2 border-black w-18 text-center bg-gradient-to-r from-blue" readOnly="readonly" /></p>
-                <p class="ml-72"><input type="button" className="border-2 border-black mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Next" id="next2" onClick={nextt2} disabled /></p>
+                <p class="ml-72"><input type="button" className="border-2 transform motion-safe:hover:scale-110 border-black mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Next" id="next2" onClick={nextt2} disabled /></p>
               </div>
 
 
@@ -95,13 +95,13 @@ function App() {
                   <li>Select S1 to Position-2 (Short) &amp; S2 to Position-1 (Supply). </li>
                   <li> Then click on Run.</li>
                   </ul> 
-                <p className="text-center"><input type="button" className="mb-8 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-2xl text-pink-800" defaultValue="Run" onClick={perform3} /></p>
+                <p className="text-center"><input type="button" className="mb-8 transform motion-safe:hover:scale-110 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-2xl text-pink-800" defaultValue="Run" onClick={perform3} /></p>
                 <p >Supply Voltage (V<sub>2</sub>) : 
                 <input type="number" name="v22" defaultValue={0} id="v22" className="bg-blue border-2 w-16 border-black text-black text-center" readOnly="readonly" />
                 <br/> &nbsp; &amp; Supply Current : <input type="number" name="A12" defaultValue={0} id="A12" className="mt-4 bg-blue border-2 text-center w-16 border-black text-black" readOnly="readonly" />
                   <br />
                   <b>Norton Resistance (R<sub>Nort</sub>):</b>&nbsp; &nbsp; <input type="number" name="rth1" defaultValue={0} id="rth1" className="text-black border-2 border-black w-18 text-center bg-gradient-to-r from-blue" readOnly="readonly" /></p>
-                <p class="ml-72"><input type="button" className="border-2 border-blue mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Next" id="next3" onClick={nextt3} disabled /></p>
+                <p class="ml-72"><input type="button" className="border-2 transform motion-safe:hover:scale-110 border-blue mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Next" id="next3" onClick={nextt3} disabled /></p>
               
 
               </div>
@@ -112,8 +112,8 @@ function App() {
                   <li>To obatin Load Current(I<sub>RL</sub>)) from Thevenin Equivalent Circuit obatined</li>
                   <li> Then click on Run.</li>
                   </ul>
-                <p className="text-center "><input type="button" className=" mb-8 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-2xl text-pink-800 " defaultValue="Run" onClick={perform4} id="per4" /></p>
-                <p><input type="button" className="border-2 border-blue mt-4  px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Finish" id="next4" onClick={nextt4} disabled /></p>
+                <p className="text-center "><input type="button" className=" mb-8 transform motion-safe:hover:scale-110 inline block text-center font-bold bg-gradient-to-r from-blue border-2 border-black  text-2xl px-2  rounded-2xl text-pink-800 " defaultValue="Run" onClick={perform4} id="per4" /></p>
+                <p><input type="button" className="border-2 border-blue mt-4 transform motion-safe:hover:scale-110 px-2 text-black font-bold bg-gradient-to-r from-blue rounded-lg" defaultValue="Finish" id="next4" onClick={nextt4} disabled /></p>
              
               </div>
 
@@ -197,7 +197,7 @@ function App() {
             <br />
           </div>
           <div className="mb-8 ml-96">
-            <input type="button" onClick={printpage}  defaultValue="Click here to print  the observation table" className="border-4 cursor-pointer border-black w-auto p-2 font-bold bg-gradient-to-r from-blue text-pink-700	 text-xl   rounded-lg" />
+            <input type="button" onClick={printpage}  defaultValue="Click here to print  the observation table" className="border-4 cursor-pointer transform motion-safe:hover:scale-110  border-black w-auto p-2 font-bold bg-gradient-to-r from-blue text-pink-700	 text-xl   rounded-lg" />
            
           </div>
         </form></div>
